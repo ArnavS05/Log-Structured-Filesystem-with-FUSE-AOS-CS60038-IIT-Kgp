@@ -651,14 +651,3 @@ The execution environment does not have a matching running-kernel build tree
 or module-loading setup, so real insmod/sysfs/rmmod checks must be run on your
 course kernel. The mounted FUSE workflow likewise needs a machine with `/dev/fuse`.
 
-## Final submission cleanup
-
-The final ZIP includes only source files, both Makefiles and this README.
-The optional Task A checker, temporary development harnesses, object files,
-executables, module binaries, disk images and obsolete ZIPs are excluded.
-Keep `tests/test_lfs.cpp`: the Phase 1 driver is required by the assignment.
-
-Before submitting, fill in the team information above, run the mounted FUSE
-and kernel-module checks on the target kernel, run `make clean` to remove build
-outputs, and rename the final archive to `assignment3_<group_number>.zip`.
-Do not include your generated `logfs.img` in the submission.
